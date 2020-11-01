@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+
+    <title>TurningOfTables' Sample Automation Site</title>
+    <meta
+      name='description'
+      content='TurningOfTables Sample Automation Site'
+    />
+    <meta name='author' content='TurningOfTables Sample Automation Site' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <script
+      src='https://code.jquery.com/jquery-3.5.1.min.js'
+      integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0='
+      crossorigin='anonymous'
+    ></script>
+    <link rel='stylesheet' href='style.css' />
+    <script src='script.js'></script>
+  </head>
+
+  <body>
+    <div id='main-container'>
+      <nav class='nav-container'>
+        <a id='home-link' class='nav-item' href='/'>Home</a>
+        <a id='login-link' class='nav-item' href='#'>Log in</a>
+      </nav>
+
+      <div class='header-section' id='header'>
+        <h1 id='company-name'>Lorem Ipsum Plc</h1>
+        <p><em>"We make that thing you want to buy"</em></p>
+      </div>
+
+      <div class='content-section' id='intro'>
+        <h2 id='intro-heading'>About Us</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        fermentum fermentum eros ac auctor. Donec vel ipsum ac orci aliquet
+        consequat in sed libero.
+      </div>
+
+      <div class='content-section' id='products'>
+        <h2 id='products-heading'>Products</h2>
+        <div id='products-container'>
+          <div id='product-free' class='product-card'>
+            <button class='product-button'>Free</button>
+            <p>$0/month</p>
+          </div>
+          <div id='product-hobby' class='product-card'>
+            <button class='product-button'>Hobby</button>
+            <p>$50/month</p>
+          </div>
+          <div id='product-pro' class='product-card'>
+            <button class='product-button'>Pro</button>
+            <p>$199/month</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='content-section' id='testimonials'>
+        <h2 id='testimonials-heading'>Testimonials</h2>
+        <p>
+          <strong>Alice:</strong> <q>Donec ultricies, urna sed rhoncus quam.</q>
+        </p>
+        <p>
+          <strong>Bob:</strong>
+          <q>Duis sem dolor, posuere luctus lacus ut, pellentesque.</q>
+        </p>
+        <p>
+          <strong>Carol:</strong>
+          <q>In non lorem eget elit scelerisque tincidunt.</q>
+        </p>
+      </div>
+
+      <div class='content-section' id='contact'>
+        <h2 id='contact-heading'>Contact Us</h2>
+        <p>Email: <a href='mailto:#####@#####.com'>#####@#####.com</a></p>
+        <p>Phone: <a href='tel:###########'>###########</a></p>
+      </div>
+    </div>
+  </body>
+
+  <div id='login-popup-overlay'>
+    <div id='login-popup'>
+      <span id='login-popup-close'>X</span>
+      <h2 id='login-form-heading'>Log in</h2>
+      <form>
+        <div class='form-element'>
+          <label for='username'>Username</label><br/>
+          <input class='form-input' type='text' id='username' name='username' />
+        </div>
+
+        <div class='form-element'>
+          <label for='password'>Password</label><br/>
+          <input class='form-input' type='password' id='password' name='password' />
+        </div>
+        <div class='form-submit-container'>
+          <input id='form-submit' type='submit' value='Log in' />
+        </div>
+        <div class='form-loading-container'>
+          <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="30px" height="30px" viewBox="0 0 128 128" xml:space="preserve"><g><path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z" fill="#e6c1f9" fill-opacity="1"/><animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1800ms" repeatCount="indefinite"></animateTransform></g></svg>
+        </div>
+        <div class='form-success-container'>
+          Login successful
+        </div>
+        <div class='form-failure-container'>
+          Login failed
+        </div>
+      </form>
+    </div>
+  </div>
+</html>

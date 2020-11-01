@@ -1,0 +1,27 @@
+{
+  "name": "playwright-test-example",
+  "version": "1.0.0",
+  "description": "A sample project for Playwright tests",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "node sample_site/sample.js",
+    "playwright-tests": "npx jest --verbose",
+    "test": "start-server-and-test start-server http://localhost:3000 playwright-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TurningOfTables/playwright-test-example.git"
+  },
+  "author": "TurningOfTables",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TurningOfTables/playwright-test-example/issues"
+  },
+  "homepage": "https://github.com/TurningOfTables/playwright-test-example#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "playwright": "^1.5.2",
+    "start-server-and-test": "^1.11.5"
+  }
+}
