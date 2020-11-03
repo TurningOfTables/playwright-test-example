@@ -18,28 +18,28 @@ afterAll(async () => {
 
 describe("Lorem Ipsum Plc - Page Content", () => {
   it("should display the nav bar", async () => {
-    expect(await page.waitForSelector(".nav-container")).to.not.be.undefined;
-    expect(await page.waitForSelector("#home-link")).to.not.be.undefined;
-    expect(await page.waitForSelector("#login-link")).to.not.be.undefined;
+    await page.waitForSelector(".nav-container");
+    await page.waitForSelector("#home-link");
+    await page.waitForSelector("#login-link");
   });
   it("should display the header", async () => {
-    expect(await page.waitForSelector(".header-section")).to.not.be.undefined;
-    expect(await page.waitForSelector("#company-name")).to.not.be.undefined;
+    await page.waitForSelector(".header-section");
+    await page.waitForSelector("#company-name");
   });
   it("should display the intro", async () => {
-    expect(await page.waitForSelector("#intro")).to.not.be.undefined;
-    expect(await page.waitForSelector("#intro-heading")).to.not.be.undefined;
+    await page.waitForSelector("#intro");
+    await page.waitForSelector("#intro-heading");
   });
   it("should display the products", async () => {
-    expect(await page.waitForSelector("#products")).to.not.be.undefined;
-    expect(await page.waitForSelector("#products-heading")).to.not.be.undefined;
+    await page.waitForSelector("#products");
+    await page.waitForSelector("#products-heading");
   });
   it("should display the testimonials", async () => {
-    expect(await page.waitForSelector("#testimonials")).to.not.be.undefined;
-    expect(await page.waitForSelector("#testimonials-heading")).to.not.be.undefined;
+    await page.waitForSelector("#testimonials");
+    await page.waitForSelector("#testimonials-heading");
   });
   it("should display the contact info", async () => {
-    expect(await page.waitForSelector("#contact")).to.not.be.undefined;
-    expect(await page.waitForSelector("#contact-heading")).to.not.be.undefined;
+    await page.waitForSelector("#contact");
+    await page.waitForSelector("#contact-heading");
   });
 });
